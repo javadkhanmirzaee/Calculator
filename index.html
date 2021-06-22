@@ -12,34 +12,34 @@
         <form action="#" name="form">
             <input type="text" name="text">
             <div class="button">
-                <input type="button" value="AC">
-                <input type="button" value="DEL">
-                <input type="button" value="%">
-                <input type="button" value="/">
+                <input type="button" value="AC" onclick="form.text.value = ''">
+                <input type="button" value="DEL" onclick="form.text.value = form.text.value.substr(0 , form.text.value.length - 1)">
+                <input type="button" value="%" onclick="form.text.value += '%'">
+                <input type="button" value="/" onclick="form.text.value += '/'">
             </div>
             <div class="button">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="*">
+                <input type="button" value="7" onclick="form.text.value += '7'">
+                <input type="button" value="8" onclick="form.text.value += '8'">
+                <input type="button" value="9" onclick="form.text.value += '9'">
+                <input type="button" value="*" onclick="form.text.value += '*'">
             </div>
             <div class="button">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="-">
+                <input type="button" value="4" onclick="form.text.value += '4'">
+                <input type="button" value="5" onclick="form.text.value += '5'">
+                <input type="button" value="6" onclick="form.text.value += '6'">
+                <input type="button" value="-" onclick="form.text.value += '-'">
             </div>
             <div class="button">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="+">
+                <input type="button" value="1" onclick="form.text.value += '1'">
+                <input type="button" value="2" onclick="form.text.value += '2'">
+                <input type="button" value="3" onclick="form.text.value += '3'">
+                <input type="button" value="+" onclick="form.text.value += '+'">
             </div>
             <div class="button">
-                <input type="button" value="0">
-                <input type="button" value=".">
-                <input type="button" value="00">
-                <input type="button" value="=">
+                <input type="button" value="0" onclick="form.text.value += '0'">
+                <input type="button" value="." onclick="form.text.value += '.'">
+                <input type="button" value="00" onclick="form.text.value += '00'">
+                <input type="button" value="=" onclick="form.text.value = eval(form.text.value)">
             </div>
         </form>
     </div>
